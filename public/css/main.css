@@ -2,3 +2,49 @@ body {
   font-family: "montserrat-bold",Arial,Helvetica,sans-serif;
   margin: 0px;
 }
+
+.map {
+  height: 400px;
+  width: 400px;
+  display: inline-block;
+  margin: auto;
+}
+
+.address {
+  height: 100px;
+  width: 400px;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+#map-wrapper {
+  margin: auto;
+  position: relative;
+  display: block;
+  width: 830px;
+  text-align: center;
+}
+
+#oakland-map {
+  margin-right: 25px
+}
+
+.body-wrapper {
+  width: 1000px;
+  min-height: 800px;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  display: block;
+  margin: auto;
+}
+
+.page-specific-header {
+  widows: 1000px;
+  height: 70px;
+  background-color: steelblue;
+  font-size: 38px;
+  padding-left: 80px;
+  padding-top: 20px;
+  color: white;
+}

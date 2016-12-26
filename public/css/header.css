@@ -25,3 +25,7 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+#header-links ul  li a {
+  text-decoration: none;
+  color: #000;
+}

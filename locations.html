@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=font1|font2|etc' type='text/css'>
+  <link rel="stylesheet" href="public/css/main.css" type="text/css">
+  <link rel="stylesheet" href="public/css/header.css" type="text/css">
+  <link rel="stylesheet" href="public/css/home.css" type="text/css">
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="header">
+        <div id="header-title"> Rectenwald Podiatry Associates </div>
+        <div id="header-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+            <li><a href="./procedures.html">Procedures</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./request.html">Request an Appointment</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-specific-header">Our Locations</div>
+      <br><br>
+      <div id="map-wrapper">Richard Rectenwald, D.P.M.</div>
+      <br><br>
+      <div id="map-wrapper">
+        <div class="address" id="oakland-address">
+          210 E. 86th Street, Suite 402 <br>
+          Pittsburgh, PA 15213 <br>
+          (212) 628-4463 <br>
+          (212) 570-6120 fax <br>
+        </div>
+        <div class="address" id="troyhill-address">
+          210 E. 86th Street, Suite 402 <br>
+          New York, NY 10028 <br>
+          (212) 628-4463 <br>
+          (212) 570-6120 fax <br>
+        </div>
+      </div>
+      <div id="map-wrapper">
+        <div class="map" id="oakland-map"></div>
+        <div class="map" id="troyhill-map"></div>
+      </div>
+    </div>
+    <script>
+      function initMap() {
+        var oaklandCoords = {lat: 40.449487, lng: -79.950297};
+        var oakland = new google.maps.Map(document.getElementById('oakland-map'), {
+          zoom: 14,
+          center: oaklandCoords
+        });
+        var oaklandMarker = new google.maps.Marker({
+          position: oaklandCoords,
+          map: oakland
+        });
+        var troyhillCoords = {lat: 40.463349, lng: -79.983084};
+        var troyhill = new google.maps.Map(document.getElementById('troyhill-map'), {
+          zoom: 14,
+          center: troyhillCoords
+        });
+        var troyhillMarker = new google.maps.Marker({
+          position: troyhillCoords,
+          map: troyhill
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcemPzSPXdv3DaWi7XCbrEEAa1VBmE3Ao&callback=initMap">
+    </script>
+
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  </body>
+</html>
